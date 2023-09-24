@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TT Developers Properties</title>
+    <link rel="stylesheet" href="/properties-styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          src="/Data/logo-icon.png"
+          alt="logo-icon"
+          class="logo-icon"
+        />
+        <img
+          src="/Data/logo-text.png"
+          alt="logo-text"
+          class="logo-text"
+        />
+      </div>
+
+      <a href="./index.html" target="_self" onclick="window.close()">
+        <button class="back-to-home">
+          <b>BACK TO HOME</b>
+        </button>
+      </a>
+    </header>
+    <div class="search-container">
+      <p class="search-text">Search for your dream property</p>
+      <div class="container">
+        <!--<nav>
+          <ul class="button-row" id="nav">
+            <li><button class="search-button">RENT</button></li>
+            <li><button class="search-button">BUY</button></li>
+            <li><button class="search-button">LEASE</button></li>
+          </ul>
+        </nav>-->
+        <div class="searchform">
+          <form id="real-estate-search-form" action="/properties.html" method="post">
+            <input
+              type="text"
+              id="location"
+              list="locn"
+              name="location"
+              value="Bangalore"
+              placeholder="Location"
+            />
+            <datalist id="locn">
+              <option value="Bengaluru"></option>
+              <option value="Mysuru"></option>
+              <option value="Belagavi"></option>
+            </datalist>
+            <input
+              type="text"
+              id="property-type"
+              list="ptype"
+              name="bhk"
+              value="2BHK"
+              placeholder="Property Type"
+            />
+            <datalist id="ptype">
+              <option value="1BK"></option>
+              <option value="1BHK"></option>
+              <option value="2BHK"></option>
+            </datalist>
+            <!--<input type="number" id="min-price" placeholder="Min Price" />
+            <input type="number" id="max-price" placeholder="Max Price" />-->
+            <button type="submit" class="search-button1">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <p class="bigfont">Properties</p>
+    <div class="property-container">
+      <div class="property">
+        <img src="/Data/property1.jpg" alt="im1" />
+
+        <p class="propertyname">12,RR Nagar</p>
+        <div class="property-details">
+          <p>
+            <span>1BK</span>
+            <span>800 sq.ft</span>
+            <span>Bengaluru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.12000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property3.jpg" alt="im2" />
+
+        <p class="propertyname">18,Nehru Nagar</p>
+        <div class="property-details">
+          <p>
+            <span>1BHK</span>
+            <span>1000 sq.ft</span>
+            <span>Belagavi</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Dileep Infra</span>
+          <button class="btn">Rs.12500</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property4.jpg" alt="" />
+
+        <p class="propertyname">07, Tilakwadi</p>
+        <div class="property-details">
+          <p>
+            <span>1BK</span>
+            <span>500 sq.ft</span>
+            <span>Belagavi</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.6000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property2.jpg" alt="" />
+
+        <p class="propertyname">85, Banaswadi</p>
+        <div class="property-details">
+          <p>
+            <span>2BHK</span>
+            <span>2000 sq.ft</span>
+            <span>Bengaluru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Harry Infra</span>
+          <button class="btn">Rs.15000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property4.jpg" alt="" />
+
+        <p class="propertyname">37,GayatriPuram</p>
+        <div class="property-details">
+          <p>
+            <span>1BHK</span>
+            <span>1000 sq.ft</span>
+            <span>Mysuru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Soma Builders</span>
+          <button class="btn">Rs.10000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property3.jpg" alt="" />
+
+        <p class="propertyname">92,TK Layout</p>
+        <div class="property-details">
+          <p>
+            <span>2BHK</span>
+            <span>1200 sq.ft</span>
+            <span>Mysuru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.13000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property1.jpg" alt="" />
+
+        <p class="propertyname">24,Balgamatti</p>
+        <div class="property-details">
+          <p>
+            <span>1BK</span>
+            <span>700 sq.ft</span>
+            <span>Belagavi</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.8400</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property2.jpg" alt="" />
+
+        <p class="propertyname">28,KR Puram</p>
+        <div class="property-details">
+          <p>
+            <span>1BHK</span>
+            <span>1200 sq.ft</span>
+            <span>Bengaluru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.10000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property4.jpg" alt="" />
+
+        <p class="propertyname">25,Sunkadkatte</p>
+        <div class="property-details">
+          <p>
+            <span>1BHK</span>
+            <span>1000 sq.ft</span>
+            <span>Bengaluru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by James Builders</span>
+          <button class="btn">Rs.11000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property5.jpg" alt="" />
+
+        <p class="propertyname">85,Kuvempu Nagar</p>
+        <div class="property-details">
+          <p>
+            <span>2BHK</span>
+            <span>2000 sq.ft</span>
+            <span>Mysuru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Max Infra</span>
+          <button class="btn">Rs.24000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property1.jpg" alt="" />
+
+        <p class="propertyname">52, Vadagoan</p>
+        <div class="property-details">
+          <p>
+            <span>2BHK</span>
+            <span>1500 sq.ft</span>
+            <span>Belagavi</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.14000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property3.jpg" alt="" />
+
+        <p class="propertyname">21,Near Mysore Zoo</p>
+        <div class="property-details">
+          <p>
+            <span>1BHK</span>
+            <span>900 sq.ft</span>
+            <span>Mysuru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.9000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property2.jpg" alt="" />
+
+        <p class="propertyname">92, Tin Factory</p>
+        <div class="property-details">
+          <p>
+            <span>2BHK</span>
+            <span>1300 sq.ft</span>
+            <span>Bengaluru</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.19000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property4.jpg" alt="" />
+
+        <p class="propertyname">1,Machhe</p>
+        <div class="property-details">
+          <p>
+            <span>2BHK</span>
+            <span>2000 sq.ft</span>
+            <span>Belagavi</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by VTU Infra</span>
+          <button class="btn">Rs.45000</button>
+        </div>
+      </div>
+      <div class="property">
+        <img src="/Data/property3.jpg" alt="" />
+
+        <p class="propertyname">12,Near Mysore Palace</p>
+        <div class="property-details">
+          <p>
+            <span>1BK</span>
+            <span>400 sq.ft</span>
+            <span>Mysore</span>
+          </p>
+        </div>
+        <div class="posted-by">
+          <span>Built by Virat Infra</span>
+          <button class="btn">Rs.8500</button>
+        </div>
+      </div>
+    </div>
+    <footer><p class="copyright">&copy 2023. All rights Reserved</p></footer>
+  </body>
+</html>

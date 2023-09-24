@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'Lufga';
+    src: local('Lufga Light'), local('Lufga-Light'),
+        url('./Font/Lufga-Light.woff2') format('woff2'),
+        url('./Font/Lufga-Light.woff') format('woff'),
+        url('./Font/Lufga-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: Lufga;
+    width: 100%;
+    /* margin: 0; */
+}
+
+button {
+    font-family: Lufga;
+}
+
+pre {
+    font-family: Lufga;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.slider-frame {
+
+    justify-content: center;
+    width: 70%;
+    border-radius: 3%;
+    transform: translate(0);
+    overflow: hidden;
+    margin-left: 15%;
+}
+.im:hover
+{
+    cursor:pointer;
+}
+.img-container {
+    width: 100%;
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.img-container img {
+    width: 100%;
+    display: flex;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    33.2% {
+        transform: translateX(00%);
+    }
+
+    33.3% {
+        transform: translateX(-100%);
+    }
+
+    66.5% {
+        transform: translateX(-100%);
+    }
+
+    66.6% {
+        transform: translateX(-200%);
+    }
+
+    99.9% {
+        transform: translateX(-200%);
+    }
+
+}
+
+.nav-link{
+    font-weight: 900;
+}
+
+/*header {
+    margin: 1vw 1vw 2vw 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+    width: fit-content;
+}*/
+
+ .logo-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.logo-icon {
+    width: 7%;
+}
+
+.logo-text {
+    width: 23%;
+}
+
+/*.nav-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    float: right;
+}
+
+.nav-bar-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+    margin-left: auto;
+    padding: 0px 5px;
+}
+
+.nav-bar-ul-li {
+    padding: 0px 5px;
+    display: flex;
+    font-weight: 900;
+
+} */
+
+.image1 {
+    background-image: url(./Data/image1.png);
+    width: 94%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 3%;
+    border-radius: 3%;
+}
+
+.bigfont {
+    font-size: 5vw;
+    font-weight: 900;
+    color: solid #110229;
+}
+
+#bigfont1 {
+    padding: 5% 0% 0% 5%;
+    margin: 0;
+}
+
+#bigfont2 {
+    font-size: 4vw;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.mediumfont {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+#mediumfont1 {
+    color:#585981;
+    padding: 1% 0% 0% 5%;
+    margin: 0;
+}
+
+#mediumfont2 {
+    padding: 2% 0% 0% 3%;
+    font-size: 3vw;
+}
+
+.image2 {
+    background-image: url(./Data/image2.png);
+    width: 94%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 3%;
+    margin-left: 3%;
+    border-radius: 3%;
+}
+
+#bigfont3 {
+    padding: 12% 0% 0% 5%;
+    color: #585981;
+}
+
+#mediumfont3 {
+    padding: 1% 0% 0% 5%;
+    color: #110229;
+}
+
+.contact-us-button {
+    font-size: smaller;
+    border: none;
+    border-radius: 10px;
+    background-color: #1DAEFF;
+    color: white;
+    padding: 8px 10px;
+    font-weight: 600;
+    margin: 5% 0% 0% 5%;
+    font-family: Lufga;
+}
+
+footer {
+    margin: 2% 3% 0% 3%;
+}
+
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.company-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter {
+    width: 170%;
+}
+
+#mediumfont4 {
+    padding: 1%;
+    padding-left: 5%;
+    margin-top: 0%;
+    font-size: 1.5vw;
+}
+
+.smallfont {
+    font-size: 1.2vw;
+}
+
+#smallfont1 {
+    padding: 1%;
+    font-size: 1.5vw;
+}
+
+#smallfont2 {
+    /* font-size: 1.2rem; */
+    padding: 1%;
+    padding-left: 5%;
+}
+
+.newsletter-form {
+    padding-left: 5%;
+
+}
+
+.emailbox {
+    width: 65%;
+    padding: 0.6vw;
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submitbox {
+    font-size: smaller;
+    background-color: #1DAEFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8vw 1.6vw;
+    color: #FFFFFF;
+    /* font-weight: bold; */
+}
+
+.social-media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon img {
+    width: 5%;
+}
+
+.property-container {
+    display: flex;
+    /* Use flexbox to center its children horizontally */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if necessary */
+    justify-content: center;
+    /* Center the items horizontally */
+    /* border: 1.5px solid #8F90A6;
+    border-radius: 10px; */
+    margin: 0% 1% 0% 1%;
+    padding: 1%;
+    padding-top: 0%;
+}
+
+.property {
+    border: 1.5px solid #8F90A6;
+    border-radius: 8px;
+    color: solid #DCDCEB;
+    min-width: fit-content;
+    margin: 1% 1%;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.property img {
+    max-width: 20%;
+    float: right;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.propertyname {
+    font-size: 180%;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 20px;
+    padding-bottom: 4%;
+}
+
+.property-details {
+    color: solid #DCDCEB;
+    font-size: 130%;
+    max-width: 50%;
+    margin: 0;
+    margin-left: 5%;
+    padding-inline-start: 0;
+    padding-bottom: 4%;
+}
+
+.property-details p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #8F90A6;
+}
+
+.posted-by {
+    display: flex;
+    font-size: 130%;
+    /*position: absolute;
+    bottom: 5%;
+    left: 0%;*/
+    margin-left: 5%;
+    color: #8F90A6;
+    padding-bottom: 1%;
+}
+
+.btn {
+    margin-left: 10%;
+    margin-right: 1%;
+    background-color: #8F90A6;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 6px 8px 2px 8px;
+}

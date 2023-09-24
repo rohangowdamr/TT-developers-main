@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TT Developers Properties HI</title>
+    <link rel="stylesheet" href="./properties-styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="./Data/logo-icon.png" alt="logo-icon" class="logo-icon" />
+        <img src="./Data/logo-text.png" alt="logo-text" class="logo-text" />
+      </div>
+
+      <button class="back-to-home">
+        <a href="./index.html" target="_self" onclick="window.close()"
+          ><b>BACK TO HOME</b></a
+        >
+      </button>
+    </header>
+    <div class="search-container">
+      <p class="search-text">Search for your dream property</p>
+      <div class="container">
+        
+        <div class="searchform">
+          <form id="real-estate-search-form" action="/properties.html" method="post">
+            <input
+              type="text"
+              id="location"
+              list="locn"
+              name="location"
+              placeholder="Location"
+            />
+            <datalist id="locn">
+              <option value="Bengaluru"></option>
+              <option value="Mysuru"></option>
+              <option value="Belagavi"></option>
+            </datalist>
+            <input
+              type="text"
+              id="property-type"
+              list="ptype"
+              name="bhk"
+              placeholder="Property Type"
+            />
+            <datalist id="ptype">
+              <option value="1BK"></option>
+              <option value="1BHK"></option>
+              <option value="2BHK"></option>
+            </datalist>
+
+            <button type="submit" class="search-button1">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <p class="bigfont">Properties</p>
+
+      <div class="property-container">
+        <% for(let i=0;i<result.length;i++) { %>
+
+          <div class="property">
+            <img src="./Data/property.jpg" alt="" />
+
+            <p class="propertyname"><%=result[i][2]%></p>
+            <div class="property-details">
+              <p>
+                <span><%=result[i][1]%></span>
+                <span>2000 sq.ft</span>
+                <span>Duplex</span>
+              </p>
+            </div>
+            <div class="posted-by">
+              <span>Built by Virat Infra</span>
+              <button class="btn">$45000</button>
+            </div>
+          </div>
+
+      <% } %>
+    </div>
+    <footer><p class="copyright">&copy 2023. All rights Reserved</p></footer>
+  </body>
+</html>

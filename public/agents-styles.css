@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Lufga';
+    src: local('Lufga Light'), local('Lufga-Light'),
+
+        url('./Font/Lufga-Light.woff2') format('woff2'),
+        url('./Font/Lufga-Light.woff') format('woff'),
+        url('./Font/Lufga-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: Lufga;
+    margin: 0;
+}
+
+button {
+    font-family: Lufga;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+
+header {
+    margin: 1vw 1vw 2vw 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Stack elements vertically on small screens */
+    align-items: center;
+    /* Align items to the left on small screens */
+    margin-bottom: 3%;
+    /* width: fit-content; */
+}
+.back:hover
+      {
+            cursor:pointer;
+      }
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.logo-icon {
+    width: 7%;
+}
+
+.logo-text {
+    width: 23%;
+}
+
+
+.back-to-home {
+    font-size: 90%;
+    float: right;
+    border: 2px solid #1DAEFF;
+    border-color: #1DAEFF;
+    border-radius: 8px;
+    background-color: white;
+    color: #1DAEFF;
+    height: auto;
+    margin: 1vw 1vw 2vw 1vw;
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding: 1% 1%;
+}
+
+.bigfont {
+    margin: 0;
+    margin-left: 1%;
+    font-size: 4em;
+    /*3.4vw or 400% or 4rem*/
+    font-weight: 900;
+    color: solid #110229;
+}
+
+.agent-container {
+    display: flex;
+    /* Use flexbox to center its children horizontally */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if necessary */
+    justify-content: center;
+    /* Center the items horizontally */
+    /* border: 1.5px solid #8F90A6;
+    border-radius: 10px; */
+    margin: 0% 1% 0% 1%;
+    padding: 1%;
+    padding-top: 0%;
+
+}
+
+.property-agent {
+    border: 1.5px solid #8F90A6;
+    border-radius: 10px;
+    color: solid #DCDCEB;
+    margin: 1% 1% 1% 1%;
+    display: inline-block;
+    width: fit-content;
+    position: relative;
+}
+
+.property-agent img {
+    width: 23%;
+    float: right;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.agentname {
+    font-size: larger;
+    font-weight: 600;
+    padding-left: 5%;
+    margin-top: 5%;
+
+}
+
+.agentdetails {
+    color: solid #DCDCEB;
+    margin: 0;
+    margin-top: 1%;
+    padding-left: 5%;
+
+}
+
+.agentdetails p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1% 5%;
+    margin: 0;
+    color: #8F90A6;
+}
+
+.star-container {
+    display: inline-block;
+    /* margin: 17% 0% 0% 0%; */
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+/* Style for the individual star icons */
+.star {
+    font-size: 150%;
+    /* Adjust the size as needed */
+    color: gold;
+    /* Default color for filled-in stars */
+}
+
+/* Style for the empty star icons */
+.star-empty {
+    font-size: 150%;
+    /* Adjust the size as needed */
+    color: #ccc;
+    /* Default color for empty stars */
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
